@@ -1,7 +1,4 @@
-import os
 import sys
-import random
-
 
 # Меню консольного файлового менеджера
 
@@ -23,42 +20,39 @@ while True:
 
     choice = input('Выберите пункт меню: ')
     if choice == '1':
-        from creating_folder import creation
-        """
-        При создании папки, новая папка отображается только после того, как полностью завершу программу
-        """
-        from menu import my_menu
-        """
-        С 'break' папка отображается, но программа полностью завершается. Подскажите, как сделать, чтобы и новая папка 
-        отображалась сразу и программа в дальнейшем выходила в главное меню. 
-        """
-
+        pass
     elif choice == '2':
-        from creating_file import creating_fl
+        pass
     elif choice == '3':
-        from delete import delete_f
-        from menu import my_menu
+        pass
     elif choice == '4':
-        from copying_folder import copying
-        break
+        pass
     elif choice == '5':
-        from viewing_the_directory import viewing_direct
-        from menu import my_menu
+        pass
     elif choice == '6':
-        from viewing_folders import viewing_fo
-        from menu import my_menu
+        pass
     elif choice == '7':
-        from viewing_files import viewing_f
-        from menu import my_menu
+        pass
     elif choice == '8':
         print('My OS is', sys.platform)
-        from menu import my_menu
     elif choice == '9':
-        pass
+        def author_info():
+            return 'Автор программы Новиков Евгений'
+            while True:
+                print('1. info')
+                print('2. Выход')
+
+                choice = input('Выберите пункт меню')
+                if choice == '1':
+                    print(author_info())
+                elif choice == '2':
+                    sys.exit()
+                else:
+                    print('неверный пункт меню')
     elif choice == '10':
-        from quiz_date import quiz_d
+        pass
     elif choice == '11':
-        from bank_account import actions_with_account
+        pass
     elif choice == '12':
         break
     else:

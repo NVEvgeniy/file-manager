@@ -10,4 +10,6 @@ def viewing_fo():
         for dirname in dirnames:
             print("Каталог:", os.path.join(result, dirname))
 
+    from menu import my_menu
+
 viewing_fo()
