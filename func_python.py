@@ -33,6 +33,7 @@ print(list(map(function_num, numbers)))
 
 def function_sort(x):
     '''
+    Находим и отделяем четные числа
     :param x: число списка
     :return: вывод четных чисел в левой части списка
     '''
@@ -64,9 +65,10 @@ print(number)
 # нахождение гипотенузы
 def function_hypot(x, y):
     '''
+    Вычисление гипотенузы
     :param x: длина катета 1
     :param y: длина катета 2
-    :return: вычисление гипотенузы
+    :return: гипотенуза
     '''
     result = (math.hypot(x, y))
     return result
@@ -78,9 +80,10 @@ print(number)
 # возведение числа в степень
 def function_pow(a, b):
     '''
+    возведение числа в степень
     :param a: число
     :param b: степень
-    :return: возведение числа в степень
+    :return: результат числа в степени
     '''
     result = (math.pow(a, b))
     return result

@@ -1,5 +1,5 @@
 import sys
-
+import os
 # Меню консольного файлового менеджера
 
 
@@ -36,19 +36,7 @@ while True:
     elif choice == '8':
         print('My OS is', sys.platform)
     elif choice == '9':
-        def author_info():
-            return 'Автор программы Новиков Евгений'
-            while True:
-                print('1. info')
-                print('2. Выход')
-
-                choice = input('Выберите пункт меню')
-                if choice == '1':
-                    print(author_info())
-                elif choice == '2':
-                    sys.exit()
-                else:
-                    print('неверный пункт меню')
+        print('Автор программы Новиков Евгений')
     elif choice == '10':
         from quiz_date import quiz_d
     elif choice == '11':

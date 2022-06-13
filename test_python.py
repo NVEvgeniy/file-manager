@@ -20,12 +20,18 @@ def test_function_sort():
 # Число пи
 def test_function_pi():
     assert math.pi
+
+
 # вычисление квадратного корня
 def test_function_sqrt():
     assert function_sqrt(49)
+
+
 # нахождение гипотенузы
 def test_function_hypot():
     assert function_hypot(3, 4)
+
+
 # возведение числа в степень
 def test_function_pow():
     assert function_pow(3, 2)
