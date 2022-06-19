@@ -1,15 +1,16 @@
 
-# menu = None
-
-def my_menu():
-    while True:
-        menu = input('Вернуться в меню? y/n: ')
-        if menu != 'y':
-            break
-        break
+import sys
 
 
-my_menu()
+def my_menu(question):
+    menu = input(question)
+    if menu != 'y':
+        sys.exit()
+
+my_menu('Вернуться в меню? y/n: ')
+
+
+# my_menu()
 
 # def creating_f_menu():
 #     while True:

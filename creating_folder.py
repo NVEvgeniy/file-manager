@@ -1,12 +1,12 @@
 import os
-
+import sys
 # Создает папку
-
+import sys
 
 def creation():
     def creating(question):
-        folder = input(question)
-        os.mkdir(folder)
+        folder = f"{input(question)}"
+        return os.mkdir(folder)
 
     creating('Введите название папки: ')
     # Меню для повтора команды
@@ -19,9 +19,9 @@ def creation():
             break
         else:
             break
+    from menu import my_menu
+
 creation()
-
-
 
 
 

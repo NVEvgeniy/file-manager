@@ -10,4 +10,6 @@ def viewing_f():
         for filename in filenames:
             print("Файл:", os.path.join(result, filename))
 
+    from menu import my_menu
+
 viewing_f()

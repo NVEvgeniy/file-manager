@@ -12,4 +12,5 @@ def delete_f():
             from delete_file import removal_file
             break
         break
+    from menu import my_menu
 delete_f()

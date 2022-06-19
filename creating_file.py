@@ -1,8 +1,7 @@
 # Создание файлов
 
-def creating_fl():
-    my_file = input('Введите имя файла: ')
-    with open(f"{my_file}.py", 'x'):
+def creating_fl(file_name):
+    with open(f"{input(file_name)}.py", 'x'):
         pass
-
-creating_fl()
+    from menu import my_menu
+creating_fl('Введите имя файла: ')

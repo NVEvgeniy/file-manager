@@ -7,4 +7,5 @@ def viewing_direct():
     # перебрать папки и файлы
     for i in result:
         print(i)
+    from menu import my_menu
 viewing_direct()

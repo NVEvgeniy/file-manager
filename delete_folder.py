@@ -4,9 +4,8 @@ import os
 
 def removal():
     def delete_f(question_three):
-        delete = input(question_three)
-        os.rmdir(delete)
-    delete_f('Введите название папки/файла: ')
+        os.rmdir(f"{input(question_three)}")
+    delete_f('Введите название папки: ')
 
     while True:
         action = input('Хотите еще удалить папку y/n: ')
@@ -15,9 +14,11 @@ def removal():
         elif action == 'n':
             print('Выбранные папки успешно удалены.')
             break
+        else:
+            print('неверный пункт меню')
         continue
-
 removal()
+
 
 
 # def delete_f(question_three, question_four):
