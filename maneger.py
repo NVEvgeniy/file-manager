@@ -4,17 +4,19 @@ import sys
 
 
 def copy_file_or_directory(name, new_name):
-    if os.path.isdir(name):
-        shutil.copytree(name, new_name)
-    else:
-        shutil.copyfile(name, new_name)
-
+    # if os.path.isdir(name):
+    #     shutil.copytree(name, new_name)
+    # else:
+    #     os.path.isdir(name)
+    shutil.copytree(name, new_name) if os.path.isdir(name) else os.path.isdir(name)
 
 def filenames():
-    result = []
-    for item in os.listdir():
-        if os.path.isfile(item):
-            result.append(item)
+    # result = []
+    # for item in os.listdir():
+    #     if os.path.isfile(item):
+    #         result.append(item)
+    # return result
+    result = [item for item in os.listdir() if os.path.isfile(item)]
     return result
 
 

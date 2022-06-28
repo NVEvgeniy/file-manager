@@ -1,5 +1,7 @@
 import os
 import shutil
+from decorator import add_menu
+
 
 # shutil.copy('123.py', '123_copy.py')
 # Копирует выбранный файл
@@ -12,10 +14,9 @@ import shutil
 #
 # copying()
 
-
+@add_menu
 def copying(question, question_copy):
     shutil.copy(f"{input(question)}", f"{input(question_copy)}")
 
-    from menu import my_menu
 
 copying('Введите папку/файл, которые хотите копировать: ', 'Введите  название копии папка/файл: ')

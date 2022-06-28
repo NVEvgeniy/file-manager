@@ -1,7 +1,9 @@
+from decorator import add_menu
 # Просмотр папок
 
 import os
 
+@add_menu
 def viewing_fo():
     result = os.listdir(os.getcwd())
     # распечатать все файлы и папки рекурсивно
@@ -10,6 +12,6 @@ def viewing_fo():
         for dirname in dirnames:
             print("Каталог:", os.path.join(result, dirname))
 
-    from menu import my_menu
+
 
 viewing_fo()

@@ -16,10 +16,12 @@ while True:
 
 
     choice = input('Выберите пункт меню: ')
+
     if choice == '1':
         account = int(input('Введите сумму, на которую вы бы хотели пополнить счет: '))
         my_account += account
         print(f'На вашем счете: {my_account}')
+
 
     elif choice == '2':
         my_purchase = int(input('Введите сумму покупки: '))
@@ -31,9 +33,12 @@ while True:
             print('На вашем счете недостаточно средств')
         print(f'На вашем счете доступно: {my_account}')
 
+
     elif choice == '3':
-        for key, value in purchase_all.items():
-            print(f'{key} - {value}')
+        result = [f'{key} - {value}' for key, value in purchase_all.items()]
+        print(result)
+        # for key, value in purchase_all.items():
+        #     print(f'{key} - {value}')
 
     elif choice == '4':
         break

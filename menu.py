@@ -10,7 +10,10 @@ def my_menu(question):
 my_menu('Вернуться в меню? y/n: ')
 
 
-# my_menu()
+
+
+
+
 
 # def creating_f_menu():
 #     while True:

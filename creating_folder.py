@@ -1,8 +1,11 @@
 import os
 import sys
+from decorator import add_menu
 # Создает папку
-import sys
 
+
+
+@add_menu
 def creation():
     def creating(question):
         folder = f"{input(question)}"
@@ -19,7 +22,7 @@ def creation():
             break
         else:
             break
-    from menu import my_menu
+    # from menu import my_menu
 
 creation()
 

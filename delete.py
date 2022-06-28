@@ -1,6 +1,7 @@
 import os
+from decorator import add_menu
 
-
+@add_menu
 def delete_f():
     while True:
         print('1. удалить папку')
@@ -12,5 +13,5 @@ def delete_f():
             from delete_file import removal_file
             break
         break
-    from menu import my_menu
+
 delete_f()

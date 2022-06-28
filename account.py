@@ -26,7 +26,6 @@ def actions_with_account():
 
         choice = input('Выберите пункт меню: ')
         if choice == '1':
-            #
             amount = int(input('Введите сумму, на которую вы бы хотели пополнить счет: '))
             account += amount
             print(f'На вашем счете: {account}')
@@ -50,8 +49,10 @@ def actions_with_account():
             print(f'На вашем счете доступно: {account}')
 
         elif choice == '3':
-            for key, value in my_purchase.items():
-                print(f'{key} - {value}')
+            # for key, value in my_purchase.items():
+            #     print(f'{key} - {value}')
+            purchase_history = [f'{key} - {value}' for key, value in my_purchase.items()]
+            print(purchase_history)
             with open(FILE_PURCHASE, 'wb') as f:
                 pickle.dump(my_purchase, f)
 

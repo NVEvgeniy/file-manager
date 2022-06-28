@@ -8,8 +8,8 @@ from maneger import copy_file_or_directory, author_info, quit, filenames
 def test_copy_file_or_directory():
     name = 'rar'
     new_name = 'rar_copy'
-    if os.path.isdir(name):
-        assert shutil.copytree(name, new_name)
+    shutil.copytree(name, new_name) if os.path.isdir(name) else False
+    assert True
 
 
 
@@ -19,12 +19,14 @@ def test_author_info():
 
 
 def test_quit():
-    if SystemExit == 0:
-        assert sys.exit(0)
+    sys.exit(0) if SystemExit == 0 else False
+    assert True
+
+
 
 
 
 def test_filenames():
-    for item in os.listdir():
-        if os.path.isfile(item):
-            assert True
+    test = [item for item in os.listdir() if os.path.isfile(item)]
+    assert test
+
